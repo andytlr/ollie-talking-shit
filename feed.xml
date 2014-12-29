@@ -1,30 +1,76 @@
 ---
 layout: null
 ---
+
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
+
+    <title>Ollie Talking Shit</title>
+
+    <link>http://ollietalkingshit.andytaylor.me/</link>
+
+    <language>en</language>
+
+    <copyright>&#xA9; 2014 Andy Taylor</copyright>
+
+    <itunes:subtitle>Sporadic recordings of Ollie learning to talk.</itunes:subtitle>
+
+    <itunes:author>Andy Taylor</itunes:author>
+
+    <itunes:keywords>kid,learning,talking,australian</itunes:keywords>
+
+    <itunes:summary>My kid learns to talk.</itunes:summary>
+
+    <description>My kid learns to talk.</description>
+
+    <itunes:owner>
+
+      <itunes:name>Andy Taylor</itunes:name>
+
+      <itunes:email>hi@andytaylor.me</itunes:email>
+
+    </itunes:owner>
+
+    <itunes:image href="https://dl.dropboxusercontent.com/u/21267/Podcasts/Ollie%20Talking%20Shit/ollie-talking-shit.jpg" />
+
+    <itunes:category text="Comedy" />
+
+    <itunes:category text="Kids &amp; Family" />
+
+    <itunes:category text="Education" />
+    <itunes:new-feed-url>http://ollietalkingshit.andytaylor.me/feed.xml</itunes:new-feed-url>
+
     {% for post in site.posts limit:10 %}
-      <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
-      </item>
+
+    <item>
+
+      <title>{{ post.title }}</title>
+
+      <itunes:author>Andy Taylor</itunes:author>
+
+      <itunes:subtitle>Ollie Talking Shit: {{ post.title }}</itunes:subtitle>
+
+      <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
+
+      <itunes:image href="https://dl.dropboxusercontent.com/u/21267/Podcasts/Ollie%20Talking%20Shit/ollie-talking-shit.jpg" />
+
+      <enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/x-m4a" />
+
+      <guid>{{ post.link }}</guid>
+
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }} GMT</pubDate>
+
+      <itunes:duration>{{ post.duration }}</itunes:duration>
+
+      <itunes:keywords>kid,learning,talking,australian</itunes:keywords>
+
+    </item>
+
     {% endfor %}
+
   </channel>
+
 </rss>
