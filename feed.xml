@@ -43,7 +43,7 @@ layout: null
     <itunes:category text="Education" />
     <itunes:new-feed-url>http://ollietalkingshit.andytaylor.me/feed.xml</itunes:new-feed-url>
 
-    {% for post in site.posts limit:10 %}
+    {% for post in site.posts %}
 
     <item>
 
