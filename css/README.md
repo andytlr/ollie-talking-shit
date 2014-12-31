@@ -1,0 +1,26 @@
+## Jekyll Podcast Feed
+
+This is a super basic Jekyll site to publish new podcast episodes and generate an RSS feed. It runs off GitHub Pages so all you need to do is make a new post in `_posts`, commit and push.
+
+People can subscribe to the RSS feed in most podcast apps except iTunes. All the required metadata for Apple should be in the feed if you want to submit the podcast to Apple too.
+
+
+### Making a new post
+
+```yaml
+---
+layout: post
+date: 2014-12-28 20:25:00
+title: "Ep 1: G'day, purple, yum yum."
+duration: "02:47"
+length: 2668168
+link: https://dl.dropboxusercontent.com/u/21267/Podcasts/Ollie%20Talking%20Shit/Ollie%20Talking%20Shit%20Ep%201.mp3
+---
+```
+
+The metadata at the top of a post is mostly straight forward.
+
+* Title and Duration are wrapped in `""` quotes because they contain `:` which confuses the YAML.
+* Duration is HH:MM:SS or just MM:SS
+* Length is the file size in bytes.
+* Link is a direct link to the mp3. Mine are just in my Dropbox Public folder.
