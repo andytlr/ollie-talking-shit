@@ -9,9 +9,9 @@ People can subscribe to the RSS feed in any podcast app including iTunes but you
 ### Basic Setup
 
 1. Install Jekyll with `sudo gem install jekyll`
-2. Clone this repo. [GitHub for Mac](https://mac.github.com) make that easier.
+2. Clone this repo. [GitHub for Mac](https://mac.github.com) makes that easier.
 3. Open `_config.yml` and add details of the podcast.
-4. Replace cover-art.jpg with new cover art. Apparently iTunes requires a 1400px square.
+4. Replace `cover-art.jpg` with new cover art. Apparently iTunes requires a 1400px square.
 5. `jekyll serve` will run a local server.
 6. Push it up to GitHub and GitHub Pages will build your site. It'll be available at http://username.github.io/reponame/ but you can also use a [custom domain](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/). OR take the contents of `_site` and upload it to any host.
 
