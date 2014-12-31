@@ -1,6 +1,8 @@
 ## Jekyll Podcast Feed
 
-This is a super basic Jekyll site to publish new podcast episodes and generate an RSS feed. It runs off GitHub Pages so all you need to do is make a new post in `_posts`, commit and push.
+This is a super basic [Jekyll](http://jekyllrb.com) site to publish new podcast episodes and generate an RSS feed. It runs off GitHub Pages so all you need to do is make a new post in `_posts`, commit and push.
+
+The RSS feed code is lifted from [Adam Wilcox](http://www.adamwilcox.org/2013/01/17/from-the-pub/).
 
 People can subscribe to the RSS feed in most podcast apps except iTunes. All the required metadata for Apple should be in the feed if you want to submit the podcast to Apple too.
 
