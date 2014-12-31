@@ -11,6 +11,7 @@ url: "http://ollietalkingshit.andytaylor.me/" # the base hostname & protocol for
 itunes_category_one: "Kids &amp; Family"
 itunes_category_two: "Education"
 itunes_category_three: "Comedy"
+colour: "#610fdd"
 
 # Build settings
 markdown: kramdown

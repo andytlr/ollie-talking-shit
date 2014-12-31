@@ -3,7 +3,7 @@
 ---
 @charset "utf-8";
 
-$colour: #610fdd;
+$colour: {{ site.colour }}; /* Use variable from _config.yml so all important variables are in the same place. */
 $content_width: 500px;
 
 body {
