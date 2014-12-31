@@ -6,6 +6,8 @@
 body {
   font-family: sans-serif;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -34,7 +36,7 @@ a {
 }
 
 .content {
-  max-width: 500px;
+  max-width: 600px;
   margin: 5% auto;
   padding: 0 5%;
 }
@@ -45,7 +47,8 @@ img {
 }
 
 .post {
-  margin-top: 4em;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .nav {
@@ -57,4 +60,9 @@ img {
     display: inline;
     margin-right: 15px;
   }
+}
+
+.cover-art {
+  max-width: 600px;
+  margin: 0 auto;
 }

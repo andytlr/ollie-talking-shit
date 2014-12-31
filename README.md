@@ -9,7 +9,7 @@ People can subscribe to the RSS feed in most podcast apps except iTunes. All the
 
 ### Publishing a New Episode
 
-Open up `_posts` and make a new file following the pattern `YYYY-MM-DD-epN.md`.
+Open up `_posts` and make a new file following the pattern `YYYY-MM-DD-epN-title.md` (this makes the URL).
 
 Put in YAML metadata and post content if you want any show notes or wot not (use Markdown).
 
