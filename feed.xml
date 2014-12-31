@@ -34,7 +34,7 @@ layout: null
 
     </itunes:owner>
 
-    <itunes:image href="{{ "/cover-art.jpg" | prepend: site.baseurl }}" />
+    <itunes:image href="cover-art.jpg" />
 
     <itunes:category text="Comedy" />
 
@@ -55,7 +55,7 @@ layout: null
 
       <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
 
-      <itunes:image href="{{ "/cover-art.jpg" | prepend: site.baseurl }}" />
+      <itunes:image href="cover-art.jpg" />
 
       <enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/x-m4a" />
 
