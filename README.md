@@ -4,7 +4,7 @@ This is a super basic [Jekyll](http://jekyllrb.com) site to publish new podcast 
 
 The RSS feed code is lifted from [Adam Wilcox](http://www.adamwilcox.org/2013/01/17/from-the-pub/).
 
-People can subscribe to the RSS feed in most podcast apps except iTunes. All the required metadata for Apple should be in the feed if you want to submit the podcast to Apple too.
+People can subscribe to the RSS feed in any podcast app including iTunes but you'll need to [submit it to Apple](https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/publishPodcast) if you want it listed in the iTunes Store Podcast Directory. All the extra metadata required by Apple should be in the feed.
 
 ### Basic Setup
 
