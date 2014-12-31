@@ -3,9 +3,9 @@ layout: default
 ---
 
 <div class="post">
-  <h2 class="post-title">{{ page.title }}</h2>
+  <h2 class="posttitle">{{ page.title }}</h2>
 
-  <p>{{ page.date | date: "%b %-d, %Y" }} &middot; {{ page.duration }} &middot; <a href="{{ page.link }}">Download</a></p>
+  <p class="metadata">{{ page.date | date: "%b %-d, %Y" }} &middot; {{ page.duration }} &middot; <a href="{{ page.link }}">Download</a></p>
 
   <audio controls preload="metadata">
     <source src="{{ page.link }}" type="audio/mpeg">

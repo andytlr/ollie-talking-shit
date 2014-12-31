@@ -5,8 +5,8 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
   <div class="post">
-    <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-    <p>{{ post.date | date: "%b %-d, %Y" }} &middot; {{ post.duration }} &middot; <a href="{{ post.link }}">Download</a></p>
+    <h2 class="posttitle"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <p class="metadata">{{ post.date | date: "%b %-d, %Y" }} &middot; {{ post.duration }} &middot; <a href="{{ post.link }}">Download</a></p>
 
     <audio controls preload="metadata">
       <source src="{{ post.link }}" type="audio/mpeg">

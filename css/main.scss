@@ -20,15 +20,23 @@ audio {
 .title {
   margin-bottom: 0;
   font-size: 1em;
+  a {
+    color: #000;
+  }
 }
 
 .subtitle {
   margin: 0;
 }
 
-h2 {
+.posttitle {
+  margin-bottom: 0.3em;
   line-height: 1.2;
-  font-size: 1.3em;
+  font-size: 1.2em;
+}
+
+.metadata {
+  margin-top: 0;
 }
 
 ul,
