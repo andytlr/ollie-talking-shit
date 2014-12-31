@@ -1,4 +1,4 @@
-## Jekyll Podcast Feed
+## Jekyll Podcast Site & Feed
 
 This is a super basic [Jekyll](http://jekyllrb.com) site to publish new podcast episodes and generate an RSS feed. It runs off GitHub Pages so all you need to do is make a new post in `_posts`, commit and push.
 
@@ -12,7 +12,8 @@ People can subscribe to the RSS feed in most podcast apps except iTunes. All the
 2. Clone this repo. [GitHub for Mac](https://mac.github.com) make that easier.
 3. Open `_config.yml` and add details of the podcast.
 4. Replace cover-art.jpg with new cover art. Apparently iTunes requires a 1400px square.
-5. `jekyll serve` will run a local server and `jekyll build` will build your site into `_site` ready to upload somewhere.
+5. `jekyll serve` will run a local server.
+6. Push it up to GitHub and GitHub Pages will build your site. It'll be available at http://username.github.io/reponame/ but you can also use a [custom domain](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/).
 
 ### Publishing a New Episode
 
