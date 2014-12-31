@@ -34,7 +34,7 @@ layout: null
 
     </itunes:owner>
 
-    <itunes:image href="https://dl.dropboxusercontent.com/u/21267/Podcasts/Ollie%20Talking%20Shit/ollie-talking-shit.jpg" />
+    <itunes:image href="{{ "/cover-art.jpg" | prepend: site.baseurl }}" />
 
     <itunes:category text="Comedy" />
 
@@ -55,7 +55,7 @@ layout: null
 
       <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
 
-      <itunes:image href="https://dl.dropboxusercontent.com/u/21267/Podcasts/Ollie%20Talking%20Shit/ollie-talking-shit.jpg" />
+      <itunes:image href="{{ "/cover-art.jpg" | prepend: site.baseurl }}" />
 
       <enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/x-m4a" />
 

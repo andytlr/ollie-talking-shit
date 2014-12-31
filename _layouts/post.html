@@ -1,15 +1,16 @@
 ---
 layout: default
 ---
+<img src="{{ "/cover-art.jpg" | prepend: site.baseurl }}" alt="Cover Art">
+<h1><a href="/">{{ site.title }}</a></h1>
+<p>{{ site.description }}</p>
+
+<p>
+  <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
+</p>
+
 <div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+  <h2 class="post-title">{{ page.title }}</h2>
+  <p>{{ page.date | date: "%b %-d, %Y" }} &middot; {{ page.duration }} &middot; <a href="{{ post.link }}">Listen</a> &middot; {{ page.length | times:1.0 | divided_by:1024 | divided_by:1024 | append:"mb" }}</p></p>
+  <div>{{ content }}</div>
 </div>

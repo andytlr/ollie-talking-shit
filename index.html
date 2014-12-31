@@ -1,23 +1,20 @@
 ---
 layout: default
 ---
+<img src="{{ "/cover-art.jpg" | prepend: site.baseurl }}" alt="Cover Art">
+<h1>{{ site.title }}</h1>
+<p>{{ site.description }}</p>
 
-<div class="home">
+<p>
+  <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
+</p>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="posts">
+  {% for post in site.posts %}
+  <div class="post">
+    <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <p>{{ post.date | date: "%b %-d, %Y" }} &middot; {{ post.duration }} &middot; <a href="{{ post.link }}">Listen</a> &middot; {{ post.length | times:1.0 | divided_by:1024 | divided_by:1024 | append:"mb" }}</p>
+    <div>{{ post.content }}</div>
+  </div>
+  {% endfor %}
 </div>
