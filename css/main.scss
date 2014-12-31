@@ -4,6 +4,7 @@
 @charset "utf-8";
 
 $colour: #610fdd;
+$content_width: 500px;
 
 body {
   font-family: Avenir, sans-serif;
@@ -37,7 +38,7 @@ a {
 }
 
 .content {
-  max-width: 600px;
+  max-width: $content_width;
   margin: 5% auto;
   padding: 0 5%;
 }
@@ -64,6 +65,6 @@ img {
 }
 
 .cover-art {
-  max-width: 600px;
+  max-width: $content_width;
   margin: 0 auto;
 }

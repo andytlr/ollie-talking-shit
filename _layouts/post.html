@@ -4,6 +4,12 @@ layout: default
 
 <div class="post">
   <h2 class="post-title">{{ page.title }}</h2>
-  <p>{{ page.date | date: "%b %-d, %Y" }} &middot; {{ page.duration }} &middot; <a href="{{ post.link }}">Listen</a> &middot; {{ page.length | times:1.0 | divided_by:1024 | divided_by:1024 | append:"mb" }}</p></p>
+
+  <p>{{ page.date | date: "%b %-d, %Y" }} &middot; {{ page.duration }} &middot; <a href="{{ page.link }}">Download</a></p>
+
+  <audio controls preload="metadata">
+    <source src="{{ page.link }}" type="audio/mpeg">
+  </audio>
+
   <div>{{ content }}</div>
 </div>
