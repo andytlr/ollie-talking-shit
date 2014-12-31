@@ -13,6 +13,10 @@ body {
   padding: 0;
 }
 
+audio {
+  width: 100%;
+}
+
 .title {
   margin-bottom: 0;
   font-size: 1em;
@@ -51,6 +55,7 @@ img {
 .post {
   margin-top: 5%;
   margin-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 .nav {
