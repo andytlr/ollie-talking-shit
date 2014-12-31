@@ -36,14 +36,10 @@ img {
 .title {
   margin-bottom: 0;
   font-size: 1.2em;
-  
+
   a {
     color: #000;
   }
-}
-
-.subtitle {
-  margin: 0;
 }
 
 .content {
@@ -64,7 +60,8 @@ img {
   font-size: 1.2em;
 }
 
-.metadata {
+.metadata,
+.subtitle {
   margin-top: 0;
   text-transform: uppercase;
   font-size: 0.75em;
