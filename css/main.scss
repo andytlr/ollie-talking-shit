@@ -18,9 +18,25 @@ audio {
   display: block;
 }
 
+ul,
+ol {
+  padding-left: 0;
+}
+
+a {
+  color: $colour;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .title {
   margin-bottom: 0;
   font-size: 1.2em;
+  
   a {
     color: #000;
   }
@@ -28,6 +44,18 @@ audio {
 
 .subtitle {
   margin: 0;
+}
+
+.content {
+  max-width: $content_width;
+  margin: 5% auto;
+  padding: 0 5%;
+}
+
+.post {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 .posttitle {
@@ -48,41 +76,22 @@ audio {
   }
 }
 
-ul,
-ol {
-  padding-left: 0;
-}
-
-a {
-  color: $colour;
-  text-decoration: none;
-}
-
-.content {
-  max-width: $content_width;
-  margin: 5% auto;
-  padding: 0 5%;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.post {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding-bottom: 5%;
-}
-
 .nav {
   padding-left: 0;
   list-style: none;
   font-weight: bold;
 
+  .nav__primary {
+    background: $colour;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    padding: 0.3em 0.7em;
+    border-radius: 3px;
+  }
+
   li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 1.5em;
   }
 }
 
