@@ -42,6 +42,11 @@ img {
   }
 }
 
+.subtitle {
+  margin: 0;
+  line-height: 1.2;
+}
+
 .content {
   max-width: $content_width;
   margin: 5% auto;
@@ -60,12 +65,11 @@ img {
   font-size: 1.2em;
 }
 
-.metadata,
-.subtitle {
+.metadata {
   margin-top: 0;
   text-transform: uppercase;
   font-size: 0.75em;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.05em;
   color: #666;
 
   a {
@@ -78,17 +82,10 @@ img {
   list-style: none;
   font-weight: bold;
 
-  .nav__primary {
-    background: $colour;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    padding: 0.3em 0.7em;
-    border-radius: 3px;
-  }
-
   li {
     display: inline;
-    margin-right: 1.5em;
+    margin-right: 1em;
+    white-space: nowrap;
   }
 }
 
