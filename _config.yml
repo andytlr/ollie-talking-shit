@@ -15,3 +15,4 @@ itunes_category_three: "Comedy"
 # Build settings
 markdown: kramdown
 permalink: pretty
+exclude: ["*.psd", "CNAME", "README.md"]
