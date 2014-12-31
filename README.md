@@ -5,7 +5,11 @@ This is a super basic Jekyll site to publish new podcast episodes and generate a
 People can subscribe to the RSS feed in most podcast apps except iTunes. All the required metadata for Apple should be in the feed if you want to submit the podcast to Apple too.
 
 
-### Making a new post
+### Publishing a New Episode
+
+Open up `_posts` and make a new file following the pattern `YYYY-MM-DD-epN.md`.
+
+Put in YAML metadata and post content if you want any show notes or wot not (use Markdown).
 
 ```yaml
 ---
@@ -16,9 +20,11 @@ duration: "02:47"
 length: 2668168
 link: https://dl.dropboxusercontent.com/u/21267/Podcasts/Ollie%20Talking%20Shit/Ollie%20Talking%20Shit%20Ep%201.mp3
 ---
+
+Post content here.
 ```
 
-The metadata at the top of a post is mostly straight forward.
+The YAMLmetadata at the top of a post is mostly straight forward.
 
 * Title and Duration are wrapped in `""` quotes because they contain `:` which confuses the YAML.
 * Duration is HH:MM:SS or just MM:SS
