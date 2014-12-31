@@ -8,65 +8,42 @@ layout: null
 
   <channel>
 
-    <title>Ollie Talking Shit</title>
-
-    <link>http://ollietalkingshit.andytaylor.me/</link>
-
+    <title>{{ site.title }}</title>
+    <link>{{ site.url }}</link>
     <language>en</language>
+    <copyright>&#xA9; {{ site.copyright_year }} {{ site.owner }}</copyright>
 
-    <copyright>&#xA9; 2014 Andy Taylor</copyright>
+    <itunes:subtitle>{{ site.subtitle }}</itunes:subtitle>
+    <itunes:author>{{ site.owner }}</itunes:author>
+    <itunes:keywords>{{ site.keywords }}</itunes:keywords>
+    <itunes:summary>{{ site.summary }}</itunes:summary>
 
-    <itunes:subtitle>Sporadic recordings of Ollie learning to talk.</itunes:subtitle>
-
-    <itunes:author>Andy Taylor</itunes:author>
-
-    <itunes:keywords>kid,learning,talking,australian</itunes:keywords>
-
-    <itunes:summary>My kid learns to talk.</itunes:summary>
-
-    <description>My kid learns to talk.</description>
+    <description>{{ site.summary }}</description>
 
     <itunes:owner>
-
-      <itunes:name>Andy Taylor</itunes:name>
-
-      <itunes:email>hi@andytaylor.me</itunes:email>
-
+      <itunes:name>{{ site.owner }}</itunes:name>
+      <itunes:email>{{ site.email }}</itunes:email>
     </itunes:owner>
 
-    <itunes:image href="cover-art.jpg" />
-
-    <itunes:category text="Comedy" />
-
-    <itunes:category text="Kids &amp; Family" />
-
-    <itunes:category text="Education" />
-    <itunes:new-feed-url>http://ollietalkingshit.andytaylor.me/feed.xml</itunes:new-feed-url>
+    <itunes:image href="{{ "cover-art.jpg" | prepend: site.url }}" />
+    <itunes:category text="{{ site.itunes_category_one }}" />
+    <itunes:category text="{{ site.itunes_category_two }}" />
+    <itunes:category text="{{ site.itunes_category_three }}" />
+    <itunes:new-feed-url>{{ "feed.xml" | prepend: site.url }}</itunes:new-feed-url>
 
     {% for post in site.posts %}
 
     <item>
-
       <title>{{ post.title }}</title>
-
-      <itunes:author>Andy Taylor</itunes:author>
-
-      <itunes:subtitle>Ollie Talking Shit: {{ post.title }}</itunes:subtitle>
-
+      <itunes:author>{{ site.owner }}</itunes:author>
+      <itunes:subtitle>{{ site.title }}: {{ post.title }}</itunes:subtitle>
       <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
-
-      <itunes:image href="cover-art.jpg" />
-
+      <itunes:image href="{{ "cover-art.jpg" | prepend: site.url }}" />
       <enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/x-m4a" />
-
       <guid>{{ post.link }}</guid>
-
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }} GMT</pubDate>
-
       <itunes:duration>{{ post.duration }}</itunes:duration>
-
-      <itunes:keywords>kid,learning,talking,australian</itunes:keywords>
-
+      <itunes:keywords>{{ site.keywords }}</itunes:keywords>
     </item>
 
     {% endfor %}
