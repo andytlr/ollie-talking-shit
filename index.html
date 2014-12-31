@@ -5,9 +5,10 @@ layout: default
 <h1>{{ site.title }}</h1>
 <p>{{ site.description }}</p>
 
-<p>
-  <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
-</p>
+<ul class="nav">
+  <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS Feed</a></li>
+  <li><a href="https://github.com/andytlr/ollie-talking-shit">Source</a></li>
+</ul>
 
 <div class="posts">
   {% for post in site.posts %}
