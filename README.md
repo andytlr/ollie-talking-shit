@@ -6,6 +6,13 @@ The RSS feed code is lifted from [Adam Wilcox](http://www.adamwilcox.org/2013/01
 
 People can subscribe to the RSS feed in most podcast apps except iTunes. All the required metadata for Apple should be in the feed if you want to submit the podcast to Apple too.
 
+### Basic Setup
+
+1. Install Jekyll with `sudo gem install jekyll`
+2. Clone this repo. [GitHub for Mac](https://mac.github.com) make that easier.
+3. Open `_config.yml` and add details of the podcast.
+4. Replace cover-art.jpg with new cover art. Apparently iTunes requires a 1400px square.
+5. `jekyll serve` will run a local server and `jekyll build` will build your site into `_site` ready to upload somewhere.
 
 ### Publishing a New Episode
 
