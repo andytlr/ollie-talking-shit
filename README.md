@@ -13,7 +13,7 @@ People can subscribe to the RSS feed in most podcast apps except iTunes. All the
 3. Open `_config.yml` and add details of the podcast.
 4. Replace cover-art.jpg with new cover art. Apparently iTunes requires a 1400px square.
 5. `jekyll serve` will run a local server.
-6. Push it up to GitHub and GitHub Pages will build your site. It'll be available at http://username.github.io/reponame/ but you can also use a [custom domain](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/).
+6. Push it up to GitHub and GitHub Pages will build your site. It'll be available at http://username.github.io/reponame/ but you can also use a [custom domain](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/). OR take the contents of `_site` and upload it to any host.
 
 ### Publishing a New Episode
 
