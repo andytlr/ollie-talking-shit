@@ -16,4 +16,4 @@ colour: "#610fdd"
 # Build settings
 markdown: kramdown
 permalink: pretty
-exclude: ["*.psd", "CNAME", "README.md"]
+exclude: ["*.psd", "CNAME", "README.md", "LICENSE.md"]
