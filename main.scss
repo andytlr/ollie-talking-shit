@@ -3,8 +3,9 @@
 ---
 @charset "utf-8";
 
-$colour: {{ site.colour }}; /* Use variable from _config.yml so all important variables are in the same place. */
-$content_width: 500px;
+// Use variables from _config.yml so all variables are in the same place.
+$colour: {{ site.colour }};
+$content_width: {{ site.contentwidth }};
 
 body {
   font-family: "Avenir Next", Avenir, "Helvetica Neue", sans-serif;

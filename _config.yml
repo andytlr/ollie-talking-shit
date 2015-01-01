@@ -12,6 +12,7 @@ itunes_category_one: "Kids &amp; Family"
 itunes_category_two: "Education"
 itunes_category_three: "Comedy"
 colour: "#610fdd"
+contentwidth: "500px"
 
 # Build settings
 markdown: kramdown
