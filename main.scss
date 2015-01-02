@@ -34,6 +34,12 @@ img {
   height: auto;
 }
 
+.content {
+  max-width: $content_width;
+  margin: 5% auto;
+  padding: 0 5%;
+}
+
 .title {
   margin-bottom: 0;
   font-size: 1.2em;
@@ -48,10 +54,27 @@ img {
   line-height: 1.2;
 }
 
-.content {
+.nav {
+  padding-left: 0;
+  list-style: none;
+  font-weight: bold;
+
+  li {
+    display: inline;
+    margin-right: 1em;
+    white-space: nowrap;
+  }
+}
+
+.cover-art {
   max-width: $content_width;
-  margin: 5% auto;
-  padding: 0 5%;
+  margin: 0 auto;
+
+  @media only screen and (min-width: $content_width) {
+    img {
+      border-radius: 3px;
+    }
+  }
 }
 
 .post {
@@ -76,21 +99,4 @@ img {
   a {
     color: inherit;
   }
-}
-
-.nav {
-  padding-left: 0;
-  list-style: none;
-  font-weight: bold;
-
-  li {
-    display: inline;
-    margin-right: 1em;
-    white-space: nowrap;
-  }
-}
-
-.cover-art {
-  max-width: $content_width;
-  margin: 0 auto;
 }
