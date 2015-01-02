@@ -12,7 +12,7 @@ itunes_category_two: "Education"
 itunes_category_three: "Comedy"
 
 # Style
-colour: "#610fdd"
+color: "#610fdd"
 contentwidth: "500px"
 
 # Build settings
