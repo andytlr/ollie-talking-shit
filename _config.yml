@@ -6,15 +6,17 @@ owner: Andy Taylor
 email: hi@andytaylor.me
 copyright_year: 2015
 keywords: kid,learning,talking,australian
-baseurl: "/" # e.g. / or /blog/
 url: "http://ollietalkingshit.andytaylor.me/"
 itunes_category_one: "Kids &amp; Family"
 itunes_category_two: "Education"
 itunes_category_three: "Comedy"
+
+# Style
 colour: "#610fdd"
 contentwidth: "500px"
 
 # Build settings
 markdown: kramdown
+baseurl: "/" # e.g. / or /blog/
 permalink: pretty
 exclude: ["*.psd", "CNAME", "README.md", "LICENSE.md"]
